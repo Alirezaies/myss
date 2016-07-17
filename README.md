@@ -1,4 +1,4 @@
-# myss
+# Myss Version 2.0.0
 
 ![myss] (http://www.tabagenworld.com/images/screenshots_logo.png)
 
