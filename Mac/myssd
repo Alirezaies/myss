@@ -1,1 +1,9 @@
+#!/bin/bash
+$current=$(date +%d-%m-%y_%H.%M.%S);
+mkdir ~/Myss/$current && cd "$_";
+while [ 1 ];
 
+do vardate=$(date +%d-%m-%Y_%H.%M.%S);
+
+screencapture -t jpg -x ~/Desktop/myssd/$vardate.jpg; sleep 60;
+done
