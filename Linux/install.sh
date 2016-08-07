@@ -2,8 +2,8 @@
 
 clear;
 echo "**************************************************************************";
-echo "*		Welcome To Myss Version 2.0.0 For Linux.                 *";
-echo "*		Developed by: Ali Reza & Muhammad Asif.	                 *";
+echo "*		Welcome To Myss Version 3.1.0 For Linux.                 *";
+echo "*		Developed by: Sadegh Alirezaie & Muhammad Asif.	         *";
 echo "*		This Installation May Require Your Permission.           *";
 echo "**************************************************************************";
 
@@ -46,7 +46,7 @@ cp ~/$folder/myss-master/Linux/compress-myss.desktop ~/Desktop/Myss/;
 echo Exec=gnome-terminal -e /home/$id/Desktop/Myss/scripts/myss.sh >> ~/Desktop/Myss/Myss.desktop;
 echo Exec=gnome-terminal -e /home/$id/Desktop/Myss/scripts/compress-myss.sh >> ~/Desktop/Myss/compress-myss.desktop;
 
-echo Success!;
+echo "Sucess!";
 echo "Myss has been installed, to start taking screenhsots run the myss file from desktop.";
 
 sleep 4;
