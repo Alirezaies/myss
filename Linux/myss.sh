@@ -7,7 +7,7 @@ startTime=$(date +"%H:%M:%S");
 mkdir ~/Desktop/Myss/$now && cd "$_";
 touch sys.log;
 n=0;
-echo "Welcome To Myss Version 3.0.0, Screen Capture Started At $startTime"
+echo "Welcome To Myss Version 3.1.0, Screen Capture Started At $startTime"
 echo " For Exit Press 'ctrl+c'";
 echo "...:::: Capture Log ::::...";
 while [ 1 = 1 ]; do
