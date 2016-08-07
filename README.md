@@ -24,13 +24,13 @@ By This You Can Have Screenshot Every 1 Minute And There's No Need Of Moss Or Fr
 ---
 
 ###FOR LINUX:
-Setp 1: Extract `myss-master.zip` To Your Downloads Directory (`~/Downloads`) 
+Setp 1: Extract `myss-master.zip` Somewhere,You Can Use `unzip myss-master.zip` 
 
-Step 2: Open A Terminal And Type `sudo chmod 755 ~/Downloads/myss-master/Linux/install.sh` And Press Enter.
+Step 2: Change Directory To `myss-master` And Make Installation File Executable By `sudo chmod 755 install.sh`
 
-Step 3: In Terminal type `~/Downloads/myss-master/Linux/install.sh` And Press Enter
+Step 3: In Terminal type `./install.sh`
 
-Installation Is Now Complete
+Installation Is Now Started,It May Require Your Permissions To Make myss.sh Executable.
 
 Enjoy.
 
