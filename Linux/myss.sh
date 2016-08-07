@@ -13,7 +13,7 @@ echo "...:::: Capture Log ::::...";
 while [ 1 = 1 ]; do
 	n=$((n+1));
 	time=$(date +"%T");
-	scrot -d 3 '%Y-%m-%d-%H:%M:%S.jpg';
+	scrot -d 60 '%Y-%m-%d-%H:%M:%S.jpg';
 	echo "$n - Screenshot captured at $(date +'%T')";
 	tail /var/log/syslog >> sys.log;
 	echo "======== Break At $startTime ========" >> sys.log;
