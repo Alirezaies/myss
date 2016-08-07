@@ -5,6 +5,7 @@
 now=$(date +"%Y-%m-%d-%H:%M:%S");
 mkdir ~/Desktop/Myss/$now && cd "$_";
 n=0;
+echo "Welcome To Myss Version 3.0.0, Screen Capture Started At %H:%M:%S"
 while [ 1 = 1 ]; do
 	n=$((n+1));
 	time=$(date +"%T");
