@@ -8,6 +8,6 @@ n=0;
 while [ 1 = 1 ]; do
 	n=$((n+1));
 	time=$(date +"%T");
-	scrot -d 5 '%Y-%m-%d-%H:%M:%S.jpg';
+	scrot -d 60 '%Y-%m-%d-%H:%M:%S.jpg';
 	echo "$n - Screenshot captured at $(date +'%T')";
 done
