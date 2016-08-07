@@ -3,7 +3,7 @@
 clear;
 echo "**************************************************************************";
 echo "*		Welcome To Myss Version 2.0.0 For Linux.                 *";
-echo "*		Developed by: Ali Reza & Muhammad Asif.	                 *";
+echo "*		Developed by: Sadegh Alirezaie & Muhammad Asif.	         *";
 echo "*		This Installation May Require Your Permission.           *";
 echo "**************************************************************************";
 
