@@ -2,8 +2,8 @@
 
 clear;
 echo "**************************************************************************";
-echo "*		Welcome To Myss Version 3.0.0 For Linux.                 *";
-echo "*		Developed by: Sadegh Alirezaie & Muhammad Asif.	         *";
+echo "*		Welcome To Myss Version 2.0.0 For Linux.                 *";
+echo "*		Developed by: Ali Reza & Muhammad Asif.	                 *";
 echo "*		This Installation May Require Your Permission.           *";
 echo "**************************************************************************";
 
@@ -29,17 +29,22 @@ fi
 set -e
 
 mkdir ~/Desktop/Myss;
+mkdir ~/Desktop/Myss/scripts;
+mkdir ~/Desktop/Myss/ss;
 echo "Folder created on desktop for stroing screenshots";
 
 sudo chmod 755 ~/$folder/myss-master/Linux/Myss.desktop;
-
+sudo chmod 755 ~/$folder/myss-master/Linux/compress-myss.desktop;
 sudo chmod 755 ~/$folder/myss-master/Linux/myss.sh;
+sudo chmod 755 ~/$folder/myss-master/Linux/compress-myss.sh
 
-cp ~/$folder/myss-master/Linux/myss.sh ~/myss.sh ;
+cp ~/$folder/myss-master/Linux/myss.sh ~/Desktop/Myss/scripts/myss.sh ;
+cp ~/$folder/myss-master/Linux/compress-myss.sh ~/Desktop/Myss/scripts/compress-myss.sh;
+cp ~/$folder/myss-master/Linux/Myss.desktop ~/Desktop/Myss/;
+cp ~/$folder/myss-master/Linux/compress-myss.desktop ~/Desktop/Myss/;
 
-cp ~/$folder/myss-master/Linux/Myss.desktop ~/Desktop/;
-
-echo Exec=gnome-terminal -e /home/$id/myss.sh >> ~/Desktop/Myss.desktop;
+echo Exec=gnome-terminal -e /home/$id/Desktop/Myss/scripts/myss.sh >> ~/Desktop/Myss/Myss.desktop;
+echo Exec=gnome-terminal -e /home/$id/Desktop/Myss/scripts/compress-myss.sh >> ~/Desktop/Myss/compress-myss.desktop;
 
 echo Success!;
 echo "Myss has been installed, to start taking screenhsots run the myss file from desktop.";
