@@ -1,6 +1,6 @@
 #!/bin/bash
 #Taking Screen Shot Every 1 Min
-#Wrote By Sadegh Alirezaie For Those Who Like To Play On Linux Or Mac With All Love
+#Wrote By Sadegh Alirezaie & Muhammad Asif For Those Who Like To Play On Linux Or Mac With All Love
 
 now=$(date +"%Y-%m-%d-%H:%M:%S");
 echo "Screen Capture Started At $now";
