@@ -1,0 +1,16 @@
+.
+├── LICENSE
+├── Linux
+│   ├── compress-myss.desktop
+│   ├── compress-myss.sh
+│   ├── install.sh
+│   ├── Myss.desktop
+│   └── myss.sh
+├── Mac
+│   ├── install.sh
+│   └── myssd
+├── myss-html
+├── README.md
+└── tree.txt
+
+3 directories, 10 files
