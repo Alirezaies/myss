@@ -1,70 +1,16 @@
 .
-├── CHANGELOG
 ├── LICENSE
 ├── Linux
 │   ├── compress-myss.desktop
 │   ├── compress-myss.sh
 │   ├── install.sh
 │   ├── Myss.desktop
-│   ├── myss.sh
-│   └── scrot
-│       ├── acinclude.m4
-│       ├── aclocal.m4
-│       ├── AUTHORS
-│       ├── ChangeLog
-│       ├── config.log
-│       ├── configure
-│       ├── configure.ac
-│       ├── configure.in
-│       ├── COPYING
-│       ├── install-sh
-│       ├── Makefile.am
-│       ├── Makefile.in
-│       ├── missing
-│       ├── mkinstalldirs
-│       ├── README
-│       ├── scrot.1
-│       ├── scrot.spec
-│       ├── scrot.spec.in
-│       ├── src
-│       │   ├── config.h.in
-│       │   ├── debug.h
-│       │   ├── getopt1.c
-│       │   ├── getopt.c
-│       │   ├── getopt.h
-│       │   ├── imlib.c
-│       │   ├── main.c
-│       │   ├── Makefile.am
-│       │   ├── Makefile.in
-│       │   ├── options.c
-│       │   ├── options.h
-│       │   ├── scrot.h
-│       │   ├── stamp-h.in
-│       │   └── structs.h
-│       └── TODO
+│   └── myss.sh
 ├── Mac
 │   ├── install.sh
 │   └── myssd
 ├── myss-html
-│   ├── components
-│   │   ├── css
-│   │   │   ├── bootstrap.min.css
-│   │   │   ├── hover-min.css
-│   │   │   └── style-1.2.css
-│   │   └── img
-│   │       ├── batman.svg
-│   │       ├── earth-globe.svg
-│   │       ├── fair.svg
-│   │       ├── github.svg
-│   │       ├── hand.svg
-│   │       ├── instagram.svg
-│   │       ├── linkedin.svg
-│   │       ├── respect.svg
-│   │       ├── skull.svg
-│   │       └── twitter.svg
-│   ├── index.html
-│   └── LICENSE
 ├── README.md
 └── tree.txt
 
-8 directories, 59 files
+3 directories, 10 files
