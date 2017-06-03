@@ -4,4 +4,4 @@ Name=Myss
 Comment=Launch Myss For Linux
 Type=Application
 Terminal=true
-Exec=gnome-terminal -e /home/vampire/Desktop/Myss/scripts/myss.sh
+Exec=gnome-terminal -e ~/Desktop/Myss/scripts/myss.sh

@@ -10,9 +10,7 @@ echo "**************************************************************************
 #Stop execution in case of error
 set -e
 
-#prompt user for location of installation folder
-echo "Please specify name or path to the folder where myss-master is located: ";
-read folder;
+folder=$(pwd);
 
 id=$USER;
 

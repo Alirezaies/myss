@@ -1,0 +1,7 @@
+3.2.0-beta:
+    Linux Changes:
+
+        1. Fixed `Myss.desktop` File Exec Part Which Used `vampire` As The User.
+        2. Used `-p` Option For `mkdir` Command.
+        3. Auto Detect Path Instead Of Asking.
+        4. 
