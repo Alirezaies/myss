@@ -15,7 +15,7 @@ folder=$(pwd);
 echo "Checking Scrot Installation";
 set +e
 
-if [ -f /etc/redhat-release]; then
+if [[ -f /etc/redhat-release ]]; then
     echo "Installing Scrot For RedHat: \n"
 
       if yum list installed scrot >/dev/null 2>&1; then
@@ -24,7 +24,7 @@ if [ -f /etc/redhat-release]; then
           sudo yum install scrot;
       fi
 
-elif [ -f /etc/debian_version]; then
+elif [[ -f /etc/debian_version ]]; then
     if [ $(dpkg-query -W -f='${Status}' scrot 2>/dev/null | grep -c "ok installed") -eq 0 ];
     then
       echo "Installing Scrot For Debian/Ubuntu: \n";
