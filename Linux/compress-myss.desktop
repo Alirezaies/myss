@@ -4,4 +4,4 @@ Name=Compress-Myss
 Comment=Launch Myss Compressor For Linux
 Type=Application
 Terminal=true
-Exec=gnome-terminal -e /home/vampire/Desktop/Myss/scripts/compress-myss.sh
+Exec=gnome-terminal -e ~/Desktop/Myss/scripts/compress-myss.sh
