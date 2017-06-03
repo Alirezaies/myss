@@ -1,6 +1,6 @@
 # Myss Version 3.2.0-beta
 
-![myss] (http://www.tabagenworld.com/images/screenshots_logo.png)
+![myss](http://www.tabagenworld.com/images/screenshots_logo.png)
 
 A Simple Program Which Allows You To Take Screenshot Every 1 Minute.
 
