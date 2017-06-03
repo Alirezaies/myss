@@ -1,50 +1,69 @@
 #!/bin/bash
 
 clear;
-echo "**************************************************************************";
-echo "*		Welcome To Myss Version 3.1.0 For Linux.                 *";
-echo "*		Developed by: Sadegh Alirezaie & Muhammad Asif.	         *";
-echo "*		This Installation May Require Your Permission.           *";
-echo "**************************************************************************";
+echo "**********************************************************************";
+echo "* Welcome To Myss Version 3.2.0-beta For Linux.                      *";
+echo "*	Developed by: Sadegh Alirezaie & Muhammad Asif.	             *";
+echo "*	This Installation May Require Your Permission.               *";
+echo "* This Installation Will Remove Th Myss Folder On Your Desktop       *";
+echo "**********************************************************************";
 
+rm -rf ~/Desktop/Myss
 #Stop execution in case of error
 set -e
 
-#prompt user for location of installation folder
-echo "Please specify name or path to the folder where myss-master is located: ";
-read folder;
+folder=$(pwd);
 
-id=$USER;
-
-#stop error detection
-echo "Checking if Scrot is installed..!!";
+echo "Checking Scrot Installation";
 set +e
-if [ $(dpkg-query -W -f='${Status}' scrot 2>/dev/null | grep -c "ok installed") -eq 0 ];
-then
-  echo "Installing scrot";
-  sudo apt-get install scrot;
+
+if [[ -f /etc/redhat-release ]]; then
+    echo "Installing Scrot For RedHat: \n"
+
+      if yum list installed scrot >/dev/null 2>&1; then
+        echo "Scrot Is Already Installed, Skipping Installation."
+      else
+          sudo yum install scrot;
+      fi
+
+elif [[ -f /etc/debian_version ]]; then
+    if [ $(dpkg-query -W -f='${Status}' scrot 2>/dev/null | grep -c "ok installed") -eq 0 ];
+    then
+      echo "Installing Scrot For Debian/Ubuntu: \n";
+      sudo apt-get install scrot;
+    fi
+
+else
+    echo "Installing Scrot: \n";
+    cd scrot;
+    ./configure;
+    make;
+    sudo su -c "make install";
+    cd ../;
 fi
+
+
 
 #start error detection
 set -e
 
-mkdir ~/Desktop/Myss;
-mkdir ~/Desktop/Myss/scripts;
-mkdir ~/Desktop/Myss/ss;
+mkdir -p ~/Desktop/Myss;
+mkdir -p ~/Desktop/Myss/scripts;
+mkdir -p ~/Desktop/Myss/ss;
 echo "Folder created on desktop for stroing screenshots";
 
-sudo chmod 755 ~/$folder/myss-master/Linux/Myss.desktop;
-sudo chmod 755 ~/$folder/myss-master/Linux/compress-myss.desktop;
-sudo chmod 755 ~/$folder/myss-master/Linux/myss.sh;
-sudo chmod 755 ~/$folder/myss-master/Linux/compress-myss.sh
+sudo chmod 755 $folder/Myss.desktop;
+sudo chmod 755 $folder/compress-myss.desktop;
+sudo chmod 755 $folder/myss.sh;
+sudo chmod 755 $folder/compress-myss.sh;
 
-cp ~/$folder/myss-master/Linux/myss.sh ~/Desktop/Myss/scripts/myss.sh ;
-cp ~/$folder/myss-master/Linux/compress-myss.sh ~/Desktop/Myss/scripts/compress-myss.sh;
-cp ~/$folder/myss-master/Linux/Myss.desktop ~/Desktop/Myss/;
-cp ~/$folder/myss-master/Linux/compress-myss.desktop ~/Desktop/Myss/;
+cp -f $folder/myss.sh ~/Desktop/Myss/scripts/myss.sh ;
+cp -f $folder/compress-myss.sh ~/Desktop/Myss/scripts/compress-myss.sh;
+cp -f $folder/Myss.desktop ~/Desktop/Myss/;
+cp -f $folder/compress-myss.desktop ~/Desktop/Myss/;
 
-echo Exec=gnome-terminal -e /home/$id/Desktop/Myss/scripts/myss.sh >> ~/Desktop/Myss/Myss.desktop;
-echo Exec=gnome-terminal -e /home/$id/Desktop/Myss/scripts/compress-myss.sh >> ~/Desktop/Myss/compress-myss.desktop;
+echo "Exec=gnome-terminal -e /home/$USER/Desktop/Myss/scripts/myss.sh" >> ~/Desktop/Myss/Myss.desktop;
+echo "Exec=gnome-terminal -e /home/$USER/Desktop/Myss/scripts/compress-myss.sh" >> ~/Desktop/Myss/compress-myss.desktop;
 
 echo "Sucess!";
 echo "Myss has been installed, to start taking screenhsots run the myss file from desktop.";

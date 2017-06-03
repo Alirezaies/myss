@@ -6,7 +6,7 @@ now=$(date +"%Y-%m-%d-%H:%M:%S");
 echo "Screen Capture Started At $now";
 echo "For Exit Press ' ctrl+c ' ";
 echo "======== Log ========";
-mkdir ~/Desktop/Myss/ss/$now && cd "$_";
+mkdir -p ~/Desktop/Myss/ss/$now && cd "$_";
 touch logfile.log;
 n=0;
 while [ 1 = 1 ]; do
