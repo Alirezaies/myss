@@ -1,7 +1,10 @@
-3.2.0-beta:
+3.2.0-beta (Jun 3, 2017):
     Linux Changes:
 
         1. Fixed `Myss.desktop` File Exec Part Which Used `vampire` As The User.
         2. Used `-p` Option For `mkdir` Command.
         3. Auto Detect Path Instead Of Asking.
-        4. 
+        4. Auto Detect OS For Scrot.
+        5. No Matter Downloading `myss-master.zip` Or Cloning Using `git`
+        6. Added gitignore For Scrot.
+        7. Added CHANGELOG.
