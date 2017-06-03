@@ -1,12 +1,14 @@
 #!/bin/bash
 
 clear;
-echo "**************************************************************************";
-echo "*		Welcome To Myss Version 3.2.0-beta For Linux.            *";
-echo "*		Developed by: Sadegh Alirezaie & Muhammad Asif.	         *";
-echo "*		This Installation May Require Your Permission.           *";
-echo "**************************************************************************";
+echo "**********************************************************************";
+echo "* Welcome To Myss Version 3.2.0-beta For Linux.                      *";
+echo "*	Developed by: Sadegh Alirezaie & Muhammad Asif.	             *";
+echo "*	This Installation May Require Your Permission.               *";
+echo "* This Installation Will Remove Th Myss Folder On Your Desktop       *";
+echo "**********************************************************************";
 
+rm -rf ~/Desktop/Myss
 #Stop execution in case of error
 set -e
 
@@ -60,8 +62,8 @@ cp -f $folder/compress-myss.sh ~/Desktop/Myss/scripts/compress-myss.sh;
 cp -f $folder/Myss.desktop ~/Desktop/Myss/;
 cp -f $folder/compress-myss.desktop ~/Desktop/Myss/;
 
-echo "Exec=gnome-terminal -e ~/Desktop/Myss/scripts/myss.sh" >> ~/Desktop/Myss/Myss.desktop;
-echo "Exec=gnome-terminal -e ~/Desktop/Myss/scripts/compress-myss.sh" >> ~/Desktop/Myss/compress-myss.desktop;
+echo "Exec=gnome-terminal -e /home/$USER/Desktop/Myss/scripts/myss.sh" >> ~/Desktop/Myss/Myss.desktop;
+echo "Exec=gnome-terminal -e /home/$USER/Desktop/Myss/scripts/compress-myss.sh" >> ~/Desktop/Myss/compress-myss.desktop;
 
 echo "Sucess!";
 echo "Myss has been installed, to start taking screenhsots run the myss file from desktop.";
