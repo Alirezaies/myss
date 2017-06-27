@@ -59,3 +59,5 @@ Enjoy.
 * The installation process will check if `scrot` is installed or not, if not, it will attempt to install it.
 
 * For Exit Press `Ctrl+C`
+
+* Currently Have Issues With Arch Linux, We'll Work On It.
