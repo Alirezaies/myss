@@ -60,4 +60,6 @@ Enjoy.
 
 * For Exit Press `Ctrl+C`
 
-* Currently Have Issues With Arch Linux, We'll Work On It.
+* ~~Currently Have Issues With Arch Linux, We'll Work On It.~~
+
+* Install `giblib` On Arch Linux.
