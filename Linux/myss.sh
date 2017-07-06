@@ -14,6 +14,6 @@ while [ 1 = 1 ]; do
 	time=$(date +"%T");
 	scrot -d 60 '%Y-%m-%d-%H:%M:%S.jpg';
 	echo "========= $now ========" >> logfile.log;
-	tail /var/log//syslog >> logfile.log
+	ps -ef >> logfile.log;
 	echo "$n - Screenshot captured at $(date +'%T')";
 done
