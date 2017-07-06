@@ -6,42 +6,7 @@
 │   ├── compress-myss.sh
 │   ├── install.sh
 │   ├── Myss.desktop
-│   ├── myss.sh
-│   └── scrot
-│       ├── acinclude.m4
-│       ├── aclocal.m4
-│       ├── AUTHORS
-│       ├── ChangeLog
-│       ├── config.log
-│       ├── configure
-│       ├── configure.ac
-│       ├── configure.in
-│       ├── COPYING
-│       ├── install-sh
-│       ├── Makefile.am
-│       ├── Makefile.in
-│       ├── missing
-│       ├── mkinstalldirs
-│       ├── README
-│       ├── scrot.1
-│       ├── scrot.spec
-│       ├── scrot.spec.in
-│       ├── src
-│       │   ├── config.h.in
-│       │   ├── debug.h
-│       │   ├── getopt1.c
-│       │   ├── getopt.c
-│       │   ├── getopt.h
-│       │   ├── imlib.c
-│       │   ├── main.c
-│       │   ├── Makefile.am
-│       │   ├── Makefile.in
-│       │   ├── options.c
-│       │   ├── options.h
-│       │   ├── scrot.h
-│       │   ├── stamp-h.in
-│       │   └── structs.h
-│       └── TODO
+│   └── myss.sh
 ├── Mac
 │   ├── install.sh
 │   └── myssd
@@ -67,4 +32,4 @@
 ├── README.md
 └── tree.txt
 
-8 directories, 59 files
+6 directories, 26 files

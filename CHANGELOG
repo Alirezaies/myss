@@ -1,3 +1,11 @@
+3.2.1-beta (Jul 6, 2017):
+    Linux Changes:
+
+        1. Removed Scrot Sources.
+        2. Switch To "ps -ef" instead of syslog For Logging.
+        3. Added Arch Linux Support.
+        4. Checking Internet Connectivity Before Installation.
+
 3.2.0-beta (Jun 3, 2017):
     Linux Changes:
 
