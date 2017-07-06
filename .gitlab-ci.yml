@@ -1,0 +1,8 @@
+install:
+    script:
+        - cd Linux;
+        - bash install.sh
+
+running:
+    script:
+        - bash /home/$USER/Desktop/Myss/myss.sh
