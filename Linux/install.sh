@@ -45,6 +45,7 @@ elif [[ -f /etc/arch-release ]]; then
         echo "Installing Scrot On Arch Release\n";
         sudo pacman -Syyu;
         sudo pacman -S scrot;
+    fi
 else
     echo "Sorry, Your System Is Not Supported, Please Open An Issue On https://github.com/AlirezaieS/MySS";
 fi
