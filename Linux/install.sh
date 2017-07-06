@@ -39,7 +39,7 @@ elif [[ -f /etc/debian_version ]]; then
       sudo apt-get install scrot;
     fi
 
-elif [[ -f /etc/arch-release]]; then
+elif [[ -f /etc/arch-release ]]; then
     if [ pacman -Qi scrot | grep -c "error" -eq 0 ];
     then
         echo "Installing Scrot On Arch Release\n";
