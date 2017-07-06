@@ -58,8 +58,8 @@ Enjoy.
 * ~~You Have To Have `scrot` For [Linux](#Linux) And `screencapture` For [Mac](#Mac) Installed To Take Screenshots.~~
 * The installation process will check if `scrot` is installed or not, if not, it will attempt to install it.
 
-* For Exit Press `Ctrl+C`
-
 * ~~Currently Have Issues On Arch Linux With Logging, We'll Work On It.~~
 
-* Install `giblib` On Arch Linux.
+* ~~Install `giblib` On Arch Linux.~~
+
+* For Exit Press `Ctrl+C`
