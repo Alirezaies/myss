@@ -1,7 +1,7 @@
 install:
     script:
-        - bash Linux/install.sh
+        - sh Linux/install.sh
 
 running:
     script:
-        - bash ~/Desktop/Myss/myss.sh
+        - sh ~/Desktop/Myss/myss.sh
