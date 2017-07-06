@@ -2,7 +2,7 @@
 
 clear;
 echo "**********************************************************************";
-echo "* Welcome To Myss Version 3.2.0-beta For Linux.                      *";
+echo "* Welcome To Myss Version 3.2.1-beta For Linux.                      *";
 echo "*	Developed by: Sadegh Alirezaie & Muhammad Asif.	             *";
 echo "*	This Installation May Require Your Permission.               *";
 echo "* This Installation Will Remove Th Myss Folder On Your Desktop       *";
@@ -33,13 +33,14 @@ elif [[ -f /etc/debian_version ]]; then
       sudo apt-get install scrot;
     fi
 
+elif [[ -f /etc/arch-release]]; then
+    if [ pacman -Qi scrot | grep -c "error" -eq 0 ];
+    then
+        echo "Installing Scrot On Arch Release\n";
+        sudo pacman -Syyu;
+        sudo pacman -S scrot;
 else
-    echo "Installing Scrot: \n";
-    cd scrot;
-    ./configure;
-    make;
-    sudo su -c "make install";
-    cd ../;
+    echo "Sorry, Your System Is Not Supported, Please Open An Issue On https://github.com/AlirezaieS/MySS";
 fi
 
 
@@ -69,7 +70,5 @@ echo "Sucess!";
 echo "Myss has been installed, to start taking screenhsots run the myss file from desktop.";
 
 sleep 4;
-
-#rm -rf ~/$folder/myss-master;
 
 exit;
