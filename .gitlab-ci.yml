@@ -5,4 +5,4 @@ install:
 
 running:
     script:
-        - bash /home/$USER/Desktop/Myss/myss.sh
+        - bash ~/Desktop/Myss/myss.sh
