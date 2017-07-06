@@ -1,7 +1,8 @@
 install:
     script:
-        - sh Linux/install.sh
+        - sudo chmod +x Linux/install.sh
+        - ./Linux/install.sh
 
 running:
     script:
-        - sh ~/Desktop/Myss/myss.sh
+        - ~/Desktop/Myss/myss.sh
