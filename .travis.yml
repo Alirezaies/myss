@@ -1,7 +1,6 @@
 install:
     script:
-        - cd Linux;
-        - bash install.sh
+        - bash Linux/install.sh
 
 running:
     script:
