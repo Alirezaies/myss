@@ -1,8 +1,11 @@
+language: bash
+dist: trusty
+sudo: required
+before_install:
+    - sudo apt update
 install:
-    script:
-        - sudo chmod +x Linux/install.sh
-        - ./Linux/install.sh
+    - sudo chmod +x Linux/install.sh
+    - ./Linux/install.sh
 
 running:
-    script:
-        - ~/Desktop/Myss/myss.sh
+    - ~/Desktop/Myss/myss.sh
