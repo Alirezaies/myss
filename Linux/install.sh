@@ -13,6 +13,12 @@ rm -rf ~/Desktop/Myss
 set -e
 
 folder=$(pwd);
+connection=$(ping -q -w 1 -c 1 `ip r | grep default | cut -d ' ' -f 3` > /dev/null && echo ok || echo error);
+
+if [[ connection="error" ]]; then
+    echo "No Internet Connectivity, Please Try Again Later.";
+    exit;
+fi
 
 echo "Checking Scrot Installation";
 set +e
