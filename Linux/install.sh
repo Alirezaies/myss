@@ -60,15 +60,15 @@ mkdir -p ~/Desktop/Myss/scripts;
 mkdir -p ~/Desktop/Myss/ss;
 echo "Folder created on desktop for stroing screenshots";
 
-sudo chmod 755 $folder/Myss.desktop;
-sudo chmod 755 $folder/compress-myss.desktop;
-sudo chmod 755 $folder/myss.sh;
-sudo chmod 755 $folder/compress-myss.sh;
+sudo chmod 755 ~/Desktop/Myss/Myss.desktop;
+sudo chmod 755 ~/Desktop/Myss/compress-myss.desktop;
+sudo chmod 755 ~/Desktop/Myss/myss.sh;
+sudo chmod 755 ~/Desktop/Myss/compress-myss.sh;
 
-cp -f $folder/myss.sh ~/Desktop/Myss/scripts/myss.sh ;
-cp -f $folder/compress-myss.sh ~/Desktop/Myss/scripts/compress-myss.sh;
-cp -f $folder/Myss.desktop ~/Desktop/Myss/;
-cp -f $folder/compress-myss.desktop ~/Desktop/Myss/;
+cp -f ~/Desktop/Myss/myss.sh ~/Desktop/Myss/scripts/myss.sh ;
+cp -f ~/Desktop/Myss/compress-myss.sh ~/Desktop/Myss/scripts/compress-myss.sh;
+cp -f ~/Desktop/Myss/Myss.desktop ~/Desktop/Myss/;
+cp -f ~/Desktop/Myss/compress-myss.desktop ~/Desktop/Myss/;
 
 echo "Exec=gnome-terminal -e /home/$USER/Desktop/Myss/scripts/myss.sh" >> ~/Desktop/Myss/Myss.desktop;
 echo "Exec=gnome-terminal -e /home/$USER/Desktop/Myss/scripts/compress-myss.sh" >> ~/Desktop/Myss/compress-myss.desktop;
