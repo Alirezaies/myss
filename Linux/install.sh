@@ -17,7 +17,7 @@ connection=$(ping -q -w 1 -c 1 `ip r | grep default | cut -d ' ' -f 3` > /dev/nu
 
 if [[ connection="error" ]]; then
     echo "No Internet Connectivity, Please Try Again Later.";
-    exit;
+    exit 1;
 fi
 
 echo "Checking Scrot Installation";
@@ -77,4 +77,4 @@ echo "Myss has been installed, to start taking screenhsots run the myss file fro
 
 sleep 4;
 
-exit;
+exit 0;
