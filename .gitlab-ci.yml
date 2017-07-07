@@ -1,3 +1,4 @@
+sudo: required
 install:
     script:
         - cd Linux;
