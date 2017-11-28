@@ -1,0 +1,28 @@
+.btn {
+        width: 100%;
+}
+
+.margin-topbottom {
+        margin-bottom: 30px;
+        margin-top: 25px;
+}
+
+.icon-primary {
+        color: #2a9fd6;
+}
+
+.icon-success {
+        color: #77b300;
+}
+
+.icon-danger {
+        color: #cc0000;
+}
+/*#btc-id{
+  border: 1px solid #77b300;
+  width: 100%;
+}
+#btc-id:hover{
+  border: 1px solid #77b300;
+  background-color: #77b300;
+}*/
